@@ -63,7 +63,10 @@ class UI {
             if (text.textContent === "null") {
                 text.innerHTML = `<em>No Description</em>`;
                 text.style.color = "lightgrey";
-                console.log("No description");
+                text.style.fontSize = "small";
+            } else {
+                text.style.color = "#34495E";
+                text.style.fontSize = "small";
             }
         });
     }
